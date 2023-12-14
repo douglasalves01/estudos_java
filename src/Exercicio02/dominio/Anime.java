@@ -4,6 +4,7 @@ public class Anime {
     private String nome;
     private String tipo;
     private int episodios;
+    private String genero;
 
     public String getNome() {
         return nome;
@@ -13,11 +14,14 @@ public class Anime {
         this.nome = nome;
     }
 
-    public void imprime(){
-        System.out.println(this.tipo);
-        System.out.println(this.episodios);
-        System.out.println(this.nome);
+    public String getTipo() {
+        return tipo;
     }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
     public int getEpisodios() {
         return episodios;
     }
@@ -26,10 +30,32 @@ public class Anime {
         this.episodios = episodios;
     }
 
-    public void setTipo(String tipo){
-        this.tipo=tipo;
+    public String getGenero() {
+        return genero;
     }
-    public String getTipo(){
-        return this.tipo;
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
+    public void init(String nome, String tipo, int episodios) {
+        this.nome = nome;
+        this.tipo = tipo;
+        this.episodios = episodios;
+    }
+
+    public void init(String nome, String tipo, int episodios,String genero) {
+        this.init(nome, tipo, episodios);
+        this.genero = genero;
+    }
+
+    public void imprime() {
+        System.out.println(this.tipo);
+        System.out.println(this.episodios);
+        System.out.println(this.genero);
+        System.out.println(this.nome);
     }
 }
+
+
+
