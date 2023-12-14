@@ -1,6 +1,6 @@
-package teste_exercicio1;
+package Exercicio01.teste;
 
-import exercicio_1.Funcionario;
+import Exercicio01.dominio.Funcionario;
 
 public class FuncionarioTest01 {
     public static void main(String[] args){
@@ -10,5 +10,6 @@ public class FuncionarioTest01 {
         funcionario.salarios=new double[]{1200,9800,2000};
 
         funcionario.imprime();
+        funcionario.imprimeMediaSalario();
     }
 }
